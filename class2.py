@@ -42,7 +42,6 @@ print(r3.items)
 print(r3.restaurant_id)
 
 
-# Displaying class attributes
 print(Zomato.discount)
 print(Zomato.coupon)
 print(Zomato.restaurant_names)

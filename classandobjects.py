@@ -219,3 +219,26 @@ def display(obj):
 display(account1)
 display(account2)
 
+class order:
+    def __init__(self, restaurant):
+        self.restaurant = restaurant
+
+    def place_order(self, item, coupon):
+        if item in self.restaurant.items:
+            price = self.restaurant.items[item]
+
+            if coupon == zomato.coupon:
+                price = price - (price * zomato.discount / 100)
+
+            print("Final bill:", price)
+
+        else:
+            print("Item not available")
+
+
+r1 = zomato("paradise", {"Briyani": 250, "coke": 20})
+r2 = zomato("Mehfil", {"Briyani": 220, "friedrice": 125})
+
+o1 = order(r1)
+
+o1.place_order("Briyani", "ZOMATO50")

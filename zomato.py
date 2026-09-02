@@ -26,5 +26,46 @@ print(zomato.restaurent_number)
 class order:
     def __init__(selfself,restaurent):
         self.restaurent=restaurent
-    def place_order(selfself, item):
-        
+    def place_order(self, item):
+        if item in self.restaurent.items:
+            price=self.restaurent.items[items]
+        if coupon==zomato.coupon:
+            price=price-zomato(price*discount/100):
+
+
+
+class Person:
+    def __init__(self, age, name):
+        self.age = age
+        self.name = name
+
+        if type(self.age) != int:
+            print("Error: Age must be an integer")
+        elif type(self.name) != str:
+            print("Error: Name must be a string")
+        else:
+            print("Valid age and name")
+
+
+age = int(input("Enter age: "))
+name = input("Enter name: ")
+
+p = Person(age, name)
+
+class Person:
+    def __init__(self, age, name):
+        self.age = age
+        self.name = name
+
+        if self.age.__class__ != int:
+            print("Error: Age must be an integer")
+        elif self.name.__class__ != str:
+            print("Error: Name must be a string")
+        else:
+            print("Valid age and name")
+
+
+age = int(input("Enter age: "))
+name = input("Enter name: ")
+
+p = Person(age, name)
